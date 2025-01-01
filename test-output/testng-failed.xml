@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test-Suit]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Case(failed)">
+    <classes>
+      <class name="testNG.PriorityTest01">
+        <methods>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- testNG.PriorityTest01 -->
+      <class name="testNG.DependOnTest">
+        <methods>
+          <include name="aLevel"/>
+          <include name="oLevel"/>
+        </methods>
+      </class> <!-- testNG.DependOnTest -->
+    </classes>
+  </test> <!-- Test Case(failed) -->
+</suite> <!-- Failed suite [Test-Suit] -->
